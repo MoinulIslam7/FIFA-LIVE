@@ -1,0 +1,402 @@
+/* ---------------------------------------
+            Font styles
+ -----------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,400&display=swap');
+
+/* ---------------------------------------
+        Common styles for body
+ -----------------------------------------*/
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+}
+
+/* ---------------------------------------
+            Header part start
+ -----------------------------------------*/
+.container {
+    width: 1280px;
+    margin: auto;
+    background-color: #161616;
+    height: 650px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.banner-part {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+}
+
+.banner-title {
+    margin: 50px 10px 100px 100px;
+}
+
+.banner-title h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.banner-title p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+}
+
+.banner-title a {
+    text-decoration: none;
+    padding: 16px 25px;
+    background: #DD0000;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 650px;
+}
+/* ---------------------------------------
+            Header part finished
+ -----------------------------------------*/
+
+
+/* ---------------------------------------
+            Middle body part start
+ -----------------------------------------*/
+
+ /* Button part */
+.blogs {
+    width: 1280px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 280px 840px;
+    grid-gap: 20px;
+    margin-bottom: 100px;
+}
+
+.blog {
+    background-color: #161616;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.blog a {
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    text-decoration: none;
+    width: 200px;
+    height: 55px;
+    text-align: center;
+    background-color: #FFFFFF;
+    font-size: 20px;
+    margin: 15px auto;
+    display: block;
+    border-radius: 10px;
+    color: #161616;
+}
+
+.blog-button,
+.match-button {
+    background-color: red;
+    color: white;
+}
+/* button part finished */
+
+/* news items */
+.news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.news-item {
+    border: 1px solid lavender;
+    border-radius: 15px;
+}
+
+.news-content {
+    padding: 15px;
+}
+
+.news-content button {
+    padding: 5px 12px;
+}
+
+.time-comment {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gap {
+    margin-right: 5px;
+    color: grey;
+}
+
+.time {
+    color: grey;
+}
+
+.button-for-pad {
+    display: none;
+}
+/* ---------------------------------------
+            news finished
+ -----------------------------------------*/
+
+ 
+ /* ---------------------------------------
+            footer start
+ -----------------------------------------*/
+footer {
+    background-color: #161616;
+    height: 500px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-content h2 {
+    font-size: 50px;
+    color: #FFFFFF;
+    margin-top: 120px;
+}
+
+.other-pages a {
+    text-decoration: none;
+    padding: 16px 25px;
+    color: #FFFFFF;
+}
+
+.social-icon {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.icon {
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+hr {
+    width: 80%;
+    margin-bottom: 50px;
+    color: #ffffff5d;
+}
+/* ---------------------------------------
+            Footer finished
+ -----------------------------------------*/
+
+
+/* ---------------------------------------
+            =Match time schedule start
+ -----------------------------------------*/
+.match-time {
+    width: 312px;
+    height: 242px;
+    border: 2px solid #E8E8E8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.logo {
+    position: relative;
+    top: 35px;
+    margin: 15px;
+}
+
+.name-time {
+    position: relative;
+    top: 30px;
+}
+/* ---------------------------------------
+            Match time end
+ -----------------------------------------*/
+
+
+/* ---------------------------------------
+            Media Queries
+ -----------------------------------------*/
+
+ /* for Mobile decies */
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+    }
+
+    .banner-part,
+    .blogs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .banner-title {
+        align-items: center;
+        text-align: center;
+        margin: 5px 10px;
+        padding: 10px;
+    }
+    .banner-image img,
+    .news img,
+    .blogs {
+        width: 100%;
+    }
+    .blog {
+        background-color: #F3F1FF;
+        align-items: center;
+    }
+
+    .news {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-content {
+        padding: 0px;
+        margin: 0;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content h2 {
+        font-size: 50px;
+        color: #FFFFFF;
+        margin-top: 100px;
+    }
+    hr {
+        margin-bottom: 3px;
+        color: #ffffff5d;
+    }
+    .other-pages a {
+        padding: 0px;
+        margin-bottom: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        color: rgba(211, 211, 211, 0.404);
+    }
+    .social-icon {
+        margin-bottom: 2px;
+        font-size: 25px;
+    }
+    .match-time {
+        width:100%;
+        height: 100%;
+        border: 2px solid #E8E8E8;
+        border-radius: 10px;
+        text-align: center;
+    }
+    span
+    {
+        margin-top: 10px;
+    }
+    .match-feature {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: auto;
+    }
+
+    .button-for-pad {
+        display: none;
+    }
+}
+
+
+/* Media query for tablet example ipad */
+
+@media only screen and (min-width: 605px)and (max-width: 980px) {
+    body {
+        margin: 20px;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-title {
+        align-items: center;
+        text-align: center;
+        margin: 5px 10px;
+        padding: 5px;
+    }
+
+    .banner-image img,
+    .news img {
+        width: 100%;
+        display: block;
+    }
+
+    .blogs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog {
+        display: flex;
+        flex-direction: row;
+        background-color: #F3F1FF;
+    }
+
+    .news {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+    }
+
+    .news-item {
+        width: 100%;
+    }
+  
+    .match-feature {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: auto;
+    }
+
+    .button-for-pad {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+    .footer-content
+    {
+        text-align: center;
+        margin: auto;
+    }
+}
+/* ---------------------------------------
+            Media Queries end
+ -----------------------------------------*/
